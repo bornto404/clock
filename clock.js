@@ -4,6 +4,10 @@ function clock(){
     if (hour < 10) { hour = "0" + hour; }
     var minute = date.getMinutes();
     if (minute < 10) { minute = "0" + minute; }
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    var day = date.getDay();
     document.getElementById("clock").innerHTML = hour + ":" + minute;
+    document.getElementById("calendar").innerHTML = day + "." + month + "." + year;
     setTimeout("clock()",1000);
 }
