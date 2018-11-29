@@ -9,5 +9,5 @@ function clock(){
     var day = date.getDate();
     document.getElementById("clock").innerHTML = hour + ":" + minute;
     document.getElementById("calendar").innerHTML = day + "." + month + "." + year;
-    setTimeout("clock()",1000);
+    setTimeout("clock()",300);
 }
