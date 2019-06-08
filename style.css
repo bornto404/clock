@@ -1,40 +1,73 @@
 body, html{
-    background-color: #111111;
+    background: repeating-linear-gradient(
+    45deg,
+    #1e1e1e,
+    #1e1e1e 10px,
+    #2a2a2a 10px,
+    #2a2a2a 20px
+);
     margin: 0 !important;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 }
 
-#container{
-    width: 100vw;
-    height: 100vh;
+.content{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 100vw;
+    height: 100vh;
+    line-height: 8vw;
 }
 
-#clock{
-    background: -webkit-linear-gradient(#159957, #155799);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 11vw;
-    font-weight: 900;
-    letter-spacing: 0.4vw;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-#calendar{
-    color: #ff0040;
+.top{
+    display: flex;
+    flex-direction: row;
     font-weight: 300;
-    letter-spacing: 10px;
-    font-size: 3vw;
-    margin: -4vw 0 0 0;
-    letter-spacing: 0.2vw;
-    font-family: 'Quicksand', sans-serif;
+    color: #DE5B49;
+    font-size: 10vw;
 }
+
+.bottom{
+    font-weight: 500;
+    color: #46B39D;
+    font-size: 10vw;
+}
+
+@media only screen and (max-width: 4097px){
+    .top,.bottom{
+        font-size: 5vw;
+    }
+    .content{
+        line-height: 4vw;
+    }
+}
+
+@media only screen and (max-width: 1921px){
+    .top,.bottom{
+        font-size: 10vw;
+    }
+    .content{
+        line-height: 8vw;
+    }
+}
+
+@media only screen and (max-width: 1281px){
+    .top,.bottom{
+        font-size: 20vw;
+    }
+    .content{
+        line-height: 16vw;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .top,.bottom{
+        font-size: 30vw;
+    }
+    .content{
+        line-height: 25vw;
+    }
+}
+

@@ -1,0 +1,35 @@
+@media only screen and (max-width: 4097px){
+    .top,.bottom{
+        font-size: 12vw;
+    }
+    .content{
+        line-height: 10vw;
+    }
+}
+
+@media only screen and (max-width: 1921px){
+    .top,.bottom{
+        font-size: 10vw;
+    }
+    .content{
+        line-height: 8vw;
+    }
+}
+
+@media only screen and (max-width: 1281px){
+    .top,.bottom{
+        font-size: 20vw;
+    }
+    .content{
+        line-height: 16vw;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .top,.bottom{
+        font-size: 30vw;
+    }
+    .content{
+        line-height: 25vw;
+    }
+}
